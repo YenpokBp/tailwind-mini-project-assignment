@@ -117,6 +117,8 @@ h2{
     color: var(--third-color);
     margin-bottom: 20px;
 }
+
+/* CONTAINER PENGUMUMAN */
 .cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -147,6 +149,7 @@ h2{
     line-height: 1.6;
 }
 
+/* DEADLINE */
 .deadline-tanggal-group {
     font-size: 18px;
     font-weight: 700;
