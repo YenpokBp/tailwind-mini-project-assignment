@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Beranda - LMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+  </head>
+  <body class="font-[Manrope] font-sans text-slate-800">
+    <!--  HEADER  -->
+    <header class="sticky bg-white border-b border-gray-200">
+      <div
+        class="w-full mx-auto flex items-center justify-between px-4 sm:px-8 py-4"
+      >
+        <h1 class="text-xl sm:text-2xl font-bold font-[Poppins] text-[#a7232e]">
+          BARA<span
+            class="bg-[#a7232e] text-white p- 1 rounded-md border border-[#a7232e] gap-3"
+            >DUCATION</span
+          >
+        </h1>
+        <div class="flex gap-2">
+          <a
+            href="login.html"
+            class="bg-[#a7232e] text-white px-5 py-2 rounded-md text-sm sm:text-base border border-[#a7232e] transition hover:bg-transparent hover:text-[#a7232e]"
+          >
+            Login
+          </a>
+          <a
+            class="bg-transparent text-[#a7232e] px-5 py-2 rounded-md text-sm sm:text-base border border-[#a7232e] transition-all duration-300 ease-in-out hover:bg-[#a7232e] hover:text-white"
+          >
+            Register
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!--  HERO / BANNER  -->
+    <section
+      class="max-w-7xl mx-auto px-4 sm:px-8 py-12 sm:py-20 flex flex-col lg:flex-row items-center gap-10"
+    >
+      <div class="w-full lg:w-1/2 text-center lg:text-left">
+        <h2
+          class="text-3xl sm:text-4xl lg:text-5xl font-bold font-[Poppins] mb-4"
+        >
+          BARADUCATION
+        </h2>
+        <p class="text-gray-500 mb-12">
+          beredukasi dengan semangat yang berapi-api, membakar rasa ingin tahu
+          di setiap langkah belajar.
+        </p>
+        <button
+          class="bg-[#a7232e] text-white px-6 py-3 rounded-md hover:bg-transparent hover:text-[#a7232e] border border-[#a7232e] transition font-bold"
+        >
+          Mulai Belajar
+        </button>
+      </div>
+      <!-- placeholder gambar/ilustrasi -->
+      <div
+        class="w-full lg:w-1/2 h-64 sm:h-80 lg:h-96 flex items-center justify-center"
+      >
+        <img src="/assets/LMS-Logo.png" alt="Logo LMS" class="max-w-sm" />
+      </div>
+    </section>
+
+    <!--  STAT BAR  -->
+    <section class="bg-[#a7232e] py-10">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center text-white"
+      >
+        <div>
+          <p class="text-2xl sm:text-3xl font-bold font-[Poppins]">233+</p>
+          <p class="text-sm sm:text-base opacity-90">Mentor</p>
+        </div>
+        <div>
+          <p class="text-2xl sm:text-3xl font-bold font-[Poppins]">15201+</p>
+          <p class="text-sm sm:text-base opacity-90">Alumni</p>
+        </div>
+        <div>
+          <p class="text-2xl sm:text-3xl font-bold font-[Poppins]">7103+</p>
+          <p class="text-sm sm:text-base opacity-90">Murid</p>
+        </div>
+        <div>
+          <p class="text-2xl sm:text-3xl font-bold font-[Poppins]">4+</p>
+          <p class="text-sm sm:text-base opacity-90">Cabang</p>
+        </div>
+      </div>
+    </section>
+
+    <!--  TENTANG KAMI  -->
+    <section
+      class="max-w-7xl mx-auto px-4 sm:px-8 py-16 flex flex-col lg:flex-row items-center gap-10"
+    >
+      <div
+        class="w-full lg:w-1/2 h-64 sm:h-80 bg-gray-200 rounded-xl flex items-center justify-center text-gray-400"
+      >
+        Gambar Tentang Kami
+      </div>
+      <div class="w-full lg:w-1/2 text-center lg:text-left">
+        <h3 class="text-2xl sm:text-3xl font-bold font-[Poppins] mb-4">
+          Tentang Kami
+        </h3>
+        <p class="text-gray-500 text-center lg:text-justify">
+          Di <span class="font-bold text-[#a7232e]">BARADUCATION</span>, kami
+          percaya setiap murid punya potensi bagai bara kecil di awal, namun
+          bisa menyala terang jika dijaga dengan tepat. Melalui mentor yang
+          berpengalaman, metode belajar yang relevan, dan lingkungan yang
+          mendukung, kami berkomitmen membantu setiap murid menemukan semangat
+          belajarnya sendiri dan terus membakarnya sepanjang perjalanan menuju
+          masa depan.
+        </p>
+      </div>
+    </section>
+
+    <!--  PRESTASI MURID  -->
+    <section class="bg-gray-50 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <h3
+          class="text-2xl sm:text-3xl font-bold font-[Poppins] text-center mb-10"
+        >
+          Prestasi Murid Kami
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- card prestasi -->
+          <div
+            class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-sky-300"
+          >
+            <div
+              class="h-40 bg-gray-200 flex items-center justify-center text-gray-400"
+            ></div>
+            <div class="p-4">
+              <p class="font-semibold font-[Poppins] text-center">
+                Katarina Sintya
+              </p>
+              <p class="text-sm text-gray-500 text-center">
+                Lolos beasiswa penuh ke Universitas Indonesia jurusan Teknik
+                Informatika
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-sky-300"
+          >
+            <div
+              class="h-40 bg-gray-200 flex items-center justify-center text-gray-400"
+            ></div>
+            <div class="p-4">
+              <p class="font-semibold font-[Poppins] text-center">
+                Yustinus Yendy
+              </p>
+              <p class="text-sm text-gray-500 text-center">
+                Juara 1 Lomba Begadang
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-sky-300 sm:col-span-2 sm:max-w-md sm:mx-auto lg:col-span-1 lg:max-w-none lg:mx-0"
+          >
+            <div
+              class="h-40 bg-gray-200 flex items-center justify-center text-gray-400"
+            ></div>
+            <div class="p-4">
+              <p class="font-semibold font-[Poppins] text-center">
+                Berliando Irfan
+              </p>
+              <p class="text-sm text-gray-500 text-center">
+                Meraih Medali Emas Olimpiade Sains Nasional (OSN) bidang Fisika
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  CABANG LOKASI  -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-8 py-16">
+      <h3
+        class="text-2xl sm:text-3xl font-bold font-[Poppins] text-center mb-10"
+      >
+        Cabang Kami
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- card cabang -->
+        <div
+          class="border border-gray-200 rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-sky-300"
+        >
+          <div
+            class="h-32 bg-gray-200 flex items-center justify-center text-gray-400"
+          ></div>
+          <div class="p-4 text-center">
+            <p class="font-semibold font-[Poppins]">Surabaya</p>
+            <p class="text-sm text-gray-500">Jl. Ketintang</p>
+          </div>
+        </div>
+
+        <div
+          class="border border-gray-200 rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-sky-300"
+        >
+          <div
+            class="h-32 bg-gray-200 flex items-center justify-center text-gray-400"
+          ></div>
+          <div class="p-4 text-center">
+            <p class="font-semibold font-[Poppins]">Bandung</p>
+            <p class="text-sm text-gray-500">Jl. Pattimura</p>
+          </div>
+        </div>
+
+        <div
+          class="border border-gray-200 rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-sky-300"
+        >
+          <div
+            class="h-32 bg-gray-200 flex items-center justify-center text-gray-400"
+          ></div>
+          <div class="p-4 text-center">
+            <p class="font-semibold font-[Poppins]">Jakarta</p>
+            <p class="text-sm text-gray-500">Jl. Merdeka</p>
+          </div>
+        </div>
+
+        <div
+          class="border border-gray-200 rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-sky-300"
+        >
+          <div
+            class="h-32 bg-gray-200 flex items-center justify-center text-gray-400"
+          ></div>
+          <div class="p-4 text-center">
+            <p class="font-semibold font-[Poppins]">Madiun</p>
+            <p class="text-sm text-gray-500">Jl. Pahlawan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  CTA  -->
+    <section class="bg-[#a7232e] py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-8 text-center text-white">
+        <h3 class="text-2xl sm:text-3xl font-bold font-[Poppins] mb-4">
+          Siap Memulai Perjalanan Belajarmu?
+        </h3>
+        <p class="mb-6 opacity-90">
+          Gabung sekarang dan rasakan pengalaman belajar bersama kami.
+        </p>
+        <button
+          class="bg-white text-[#a7232e] px-6 py-3 rounded-md font-medium hover:bg-transparent hover:text-white border border-white transition"
+        >
+          Daftar Sekarang
+        </button>
+      </div>
+    </section>
+
+    <!--  FOOTER  -->
+    <footer class="bg-gray-900 text-gray-300 py-12 text-c">
+      <div
+        class="w-full mx-auto px-6 sm:px-8 lg:px-16 xl:px-24 2xl:px-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+      >
+        <div>
+          <p class="text-white font-bold font-[Poppins] mb-2">NAMA LMS</p>
+          <p class="text-sm">Belajar dengan bara, tumbuh tanpa henti.</p>
+        </div>
+        <div>
+          <p class="text-white font-semibold mb-2">Navigasi</p>
+          <ul class="text-sm space-y-1">
+            <li><a href="#" class="hover:text-white">Beranda</a></li>
+            <li><a href="#" class="hover:text-white">Tentang Kami</a></li>
+            <li><a href="#" class="hover:text-white">Cabang</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-white font-semibold mb-2">Kontak</p>
+          <ul class="text-sm space-y-1">
+            <li>Email: baraducation@gmail.com</li>
+            <li>Telepon: 1234225</li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-white mb-2">Sosial Media</p>
+          <div class="flex gap-3">
+            <!-- taruh icon sosmed di sini -->
+            <i class="fi fi-brands-instagram"></i>
+            <i class="fi fi-brands-facebook"></i>
+            <i class="fi fi-br-cross"></i>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-xs text-gray-500 mt-10">
+        © 2026 BARADUCATION All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMS</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- bahan font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+  </head>
+  <body class="font-[Manrope] font-sans text-slate-800">
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+  <div
+    class="max-w-[1920px] mx-auto flex items-center justify-between px-4 sm:px-8 py-4"
+  >
+    <div class="flex items-center gap-3">
+      <img
+        src="/assets/LMS-Logo.png"
+        alt="Logo LMS"
+        class="w-9 h-9 sm:w-10 sm:h-10"
+      />
+      <h1 class="text-xl sm:text-2xl font-bold font-[Poppins] text-[#a7232e]">
+        BARA<span
+          class="bg-[#a7232e] text-white px-1 rounded-md border border-[#a7232e]"
+          >DUCATION</span
+        >
+      </h1>
+    </div>
+
+    <!-- Nav desktop, disembunyikan di bawah lg -->
+    <nav class="hidden lg:block">
+      <ul
+        class="flex flex-wrap gap-4 sm:gap-6 text-sm sm:text-base font-bold text-slate-700 "
+      >
+        <li><a href="#dasbor" class="hover:text-[#a7232e] transition">Dashboard</a></li>
+        <li><a href="#pengumuman" class="hover:text-[#a7232e] transition">Pengumuman</a></li>
+        <li><a href="#deadline" class="hover:text-[#a7232e] transition">Deadline</a></li>
+        <li><a href="#kelas" class="hover:text-[#a7232e] transition">Jadwal</a></li>
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      
+        <a href="beranda.html"
+        class=" bg-[#a7232e] text-white px-5 py-2 rounded-md text-sm sm:text-base border border-[#a7232e] transition hover:bg-transparent hover:text-[#a7232e]"
+      >
+        Logout
+      </a>
+
+    </div>
+  </div>
+
+  <!-- panel menu mobile -->
+  <div id="menu-panel" class="hidden lg:hidden border-t border-gray-200 bg-white">
+    <ul class="flex flex-col gap-1 px-4 py-3 text-sm font-medium text-slate-700">
+      <li><a href="#dasbor" class="block py-2 hover:text-[#a7232e]">Dashboard</a></li>
+      <li><a href="#pengumuman" class="block py-2 hover:text-[#a7232e]">Pengumuman</a></li>
+      <li><a href="#deadline" class="block py-2 hover:text-[#a7232e]">Deadline</a></li>
+      <li><a href="#kelas" class="block py-2 hover:text-[#a7232e]">Jadwal</a></li>
+      <li class="pt-2">
+        <a href="beranda.html" class="block text-center bg-[#a7232e] text-white px-4 py-2 rounded-md"
+          >Logout</a
+        >
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+
+    <main>
+      <section id="dasbor">
+        <div class="dasbor-text">
+          <h3>
+            Selamat Datang <br />
+            <span>User</span>
+          </h3>
+          <p>
+            Selamat datang di Dashboard Utama, pusat kendali yang memudahkan
+            Anda untuk mengakses seluruh materi modul, memantau tenggat waktu
+            tugas, serta meninjau jadwal kegiatan akademik secara terintegrasi
+            dan efisien agar proses belajar menjadi lebih terorganisir dan
+            produktif.
+          </p>
+          <div class="dasbor-btn">
+            <button class="btn btn-primary">Pengumuman</button>
+            <button class="btn btn-outline">Jadwal Kelas</button>
+          </div>
+        </div>
+
+        <img src="/assets/dashboard.png" alt="Logo LMS" />
+      </section>
+      <section id="pengumuman">
+        <h2>Pengumuman Terbaru</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Libur Nasional</h3>
+            <p>Tanggal 17 Agustus tidak ada pembelajaran.</p>
+          </article>
+
+          <article class="card">
+            <h3>Maintenance Sistem</h3>
+            <p>Sistem akan mengalami maintenance pada tanggal 20 Juli 2026.</p>
+          </article>
+
+          <article class="card">
+            <h3>Workshop AI</h3>
+            <p>Pendaftaran workshop dibuka sampai minggu depan.</p>
+          </article>
+        </div>
+      </section>
+      <section id="deadline">
+        <h2>Deadline Akhir</h2>
+        <h4>Selasa, 05 Juni 2026</h4>
+        <div class="cards-dl">
+          <ul>
+            <li class="card-dl">
+              <div class="card-dl-info">
+                <div class="card-dl-header">
+                  <h3 class="deadline-nama">Kelompok Tugas Besar</h3>
+                  <span class="status status-late">Terlambat</span>
+                </div>
+                <p class="deadline-matkul">DASAR KECERDASAN ARTIFISIAL</p>
+                <span class="deadline-waktu">00:00</span>
+              </div>
+              <button class="btn-aksi">Tekan Aksi</button>
+            </li>
+            <h4>Sabtu, 18 Juli 2026</h4>
+            <li class="card-dl">
+              <div class="card-dl-info">
+                <div class="card-dl-header">
+                  <h3 class="deadline-nama">Quiz Week 4</h3>
+                  <span class="status status-nonlate">3 Hari Lagi</span>
+                </div>
+                <p class="deadline-matkul">JARINGAN KOMPUTER</p>
+                <span class="deadline-waktu">23.59</span>
+              </div>
+              <button class="btn-aksi">Tekan Aksi</button>
+            </li>
+            <h4>Minggu, 12 Juli 2026</h4>
+            <li class="card-dl">
+              <div class="card-dl-info">
+                <div class="card-dl-header">
+                  <h3 class="deadline-nama">Tugas Praktikum Week 4</h3>
+                  <span class="status status-nonlate">Hari Ini</span>
+                </div>
+                <p class="deadline-matkul">PEMROGRAMAN BERBASIS OBJEK</p>
+                <span class="deadline-waktu">17.00</span>
+              </div>
+              <button class="btn-aksi">Tekan Aksi</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="kelas">
+        <h2>Jadwal Kelas Hari Ini</h2>
+        <div class="cards-kls">
+          <article class="card-kls">
+            <h3 class="kls-header">LOGIKA MATEMATIKA</h3>
+            <p class="status-berlangsung">
+              <span class="status-kls live"></span> Sedang Berlangsung
+            </p>
+            <div class="kls-detail">
+              <div class="kls-item">
+                <span class="kls-label">Waktu</span>
+                <span class="kls-jam">09:30 - 11:10</span>
+              </div>
+              <div class="kls-item">
+                <span class="kls-label">Ruangan</span>
+                <span class="kls-jam">2.18</span>
+              </div>
+              <div class="kls-item">
+                <span class="kls-label">Kode Mentor</span>
+                <span class="kls-jam">VRO</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-kls">
+            <h3 class="kls-header">JARINGAN KOMPUTER</h3>
+            <p class="status-berlangsung">
+              <span class="status-kls"></span> Belum Dimulai
+            </p>
+            <div class="kls-detail">
+              <div class="kls-item">
+                <span class="kls-label">Waktu</span>
+                <span class="kls-jam">13:00 - 15:00</span>
+              </div>
+              <div class="kls-item">
+                <span class="kls-label">Ruangan</span>
+                <span class="kls-jam">1.07</span>
+              </div>
+              <div class="kls-item">
+                <span class="kls-label">Kode Mentor</span>
+                <span class="kls-jam">BCA</span>
+              </div>
+            </div>
+          </article>
+          <article class="card-kls">
+            <h3 class="kls-header">TAILWIND CSS</h3>
+            <p class="status-berlangsung">
+              <span class="status-kls"></span> Belum Dimulai
+            </p>
+            <div class="kls-detail">
+              <div class="kls-item">
+                <span class="kls-label">Waktu</span>
+                <span class="kls-jam">13:00 - 15:00</span>
+              </div>
+              <div class="kls-item">
+                <span class="kls-label">Ruangan</span>
+                <span class="kls-jam">2.01</span>
+              </div>
+              <div class="kls-item">
+                <span class="kls-label">Kode Mentor</span>
+                <span class="kls-jam">YYS</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <footer class="bg-gray-900 text-gray-300 py-12">
+        <div
+          class="w-full mx-auto px-6 sm:px-8 lg:px-16 xl:px-24 2xl:px-32
+           max-w-[1920px]
+           grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+        >
+          <div>
+            <p class="text-white font-bold font-[Poppins] mb-2">NAMA LMS</p>
+            <p class="text-sm">Belajar dengan bara, tumbuh tanpa henti.</p>
+          </div>
+          <div>
+            <p class="text-white font-semibold mb-2">Navigasi</p>
+            <ul class="text-sm space-y-1">
+              <li><a href="#" class="hover:text-white">Beranda</a></li>
+              <li><a href="#" class="hover:text-white">Tentang Kami</a></li>
+              <li><a href="#" class="hover:text-white">Cabang</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-white font-semibold mb-2">Kontak</p>
+            <ul class="text-sm space-y-1">
+              <li>Email: baraducation@gmail.com</li>
+              <li>Telepon: 1234225</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-white mb-2">Sosial Media</p>
+            <div class="flex gap-3">
+              <!-- taruh icon sosmed di sini -->
+              <i class="fi fi-brands-instagram"></i>
+              <i class="fi fi-brands-facebook"></i>
+              <i class="fi fi-br-cross"></i>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-xs text-gray-500 mt-10">
+          © 2026 BARADUCATION All rights reserved.
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
